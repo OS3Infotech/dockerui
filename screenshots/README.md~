@@ -1,0 +1,25 @@
+DockerUI
+
+DockerUI is a web interface to interact with the Remote API. The goal is to provide a pure client side implementation so it is effortless to connect and manage docker. This project is not complete and is still under heavy development.
+
+Quickstart
+Step 1
+Add this line to /etc/default/docker
+
+DOCKER_OPTS="-H unix:///var/run/docker.sock -H tcp://0.0.0.0:4243 -api-enable-cors"
+
+To enable cross origin requests to the remote api we add the flag "–api-enable-cors" when running docker in daemon mode.
+
+Pull the latest image:
+
+docker pull abh1nav/dockerui:latest
+
+Step 2
+
+If you're running Docker using a unix socket (default):
+
+docker run -d -p 9000:9000 -v /var/run/docker.sock:/docker.sock \
+--name dockerui abh1nav/dockerui:latest -e="/docker.sock"
+
+If you're running Docker over tcp: 
+
