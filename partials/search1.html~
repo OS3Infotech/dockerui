@@ -1,0 +1,29 @@
+
+<div ng-controller="MyController">
+      Browse Repos:
+
+      <input type="text" ng-model="graph" ng-blur="getGraph()" placeholder="search image">
+	<button class="btn btn-primary" type="button" ng-click="getGraph()">search</button>
+<table class="table table-striped">
+<tr><th>Name<th>
+<th width="20%">Star count<th>
+<tr>
+</table>
+<div id="wrapper">
+ <div id="table-scroll" style="overflow-y: auto; height: 150px">
+<table class="table table-striped">
+      <tbody>
+      <tr ng-repeat="data in result.data">
+        <td cellpadding="20">{{data.name}}</td>
+	 <td cellpadding="20">{{data.star_count}}</td>
+	<td cellpadding="20"><button ng-click="getData(data)"  class="btn btn-primary" type="button">PULL</button></td>
+       <!-- <td>{{issue.state}}</td>
+        <td>{{issue.user.login}}</td>
+        <td>{{issue.title}}</td>
+        <td>{{issue.body}}</td>-->
+      </tr>
+     </tbody>
+    </table>
+ </div>
+ </div>
+</div>

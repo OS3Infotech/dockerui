@@ -1,0 +1,29 @@
+<div id="commit-modal" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>commit container</h3>
+  </div>
+  <div class="modal-body">
+    <form>
+        <fieldset>
+            <legend>Commit Container</legend>
+	
+           <label>Container Id:</label>
+            <input type="text" placeholder="{{ IdPlaceholder }}" ng-model="container.Id"/>
+           
+		<!-- <label>message:</label>
+            <input type="text" ng-model="container.msg"/>-->
+
+            <label>Repo Name:</label>
+            <input type="text" placeholder="{{ Placeholder }}" ng-model="container.repo"/>
+		<small>Name of repo that you have committed</small>
+                     
+        </fieldset>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a href="" class="btn btn-primary" ng-click="CommitContainer(container)">commit</a>
+	<a href="" class="btn btn-default" ng-click="close()">Background</a>
+  </div>
+
+</div>

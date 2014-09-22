@@ -16,7 +16,7 @@ angular.module('dockerui.services', ['ngResource'])
             changes :{method: 'GET', params: {action:'changes'}, isArray: true},
             create :{method: 'POST', params: {action:'create'}},
             remove :{method: 'DELETE', params: {id: '@id', v:0}},
-	//CommitContainer:{method: 'POST', params: {id: '@id'},{action :'CommitContainer'}}
+	CommitContainer:{method: 'POST', params: {id: '@id'},{action :'CommitContainer'}}
         });
     })
     .factory('Image', function($resource, Settings) {

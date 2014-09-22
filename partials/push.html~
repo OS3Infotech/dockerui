@@ -1,0 +1,34 @@
+<div id="push-modal" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Push Image</h3>
+  </div>
+  <div class="modal-body">
+    <form>
+        <fieldset>
+            <legend>Push Image</legend>
+
+            <label>username:</label>
+            <input type="text" ng-model="config.uname"/>
+            
+
+            <label>password:</label>
+            <input type="password" ng-model="config.pass"/>
+
+            <label>email:</label>
+            <input type="email" ng-model="config.email"/>
+
+            <label>rep name:</label>
+            <input type="text" ng-model="config.repo"/>
+		 <small>Name of repo that you have committed</small>
+
+            
+        </fieldset>
+    </form>
+  </div>
+  <div class="modal-footer">
+	 
+    <a href="" class="btn btn-primary" ng-click="pushImage(config)">Push</a>
+     <a href="" class="btn btn-default" ng-click="backgound()">Backgound</a>
+  </div>
+</div>

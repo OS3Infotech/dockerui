@@ -1,6 +1,5 @@
 ## DockerUI
 
-## Search,Pull,Commit,Push
 ![Containers](/containers.png)
 DockerUI is a web interface to interact with the Remote API.  The goal is to provide a pure client side implementation so it is effortless to connect and manage docker.  This project is not complete and is still under heavy development.
 
@@ -8,8 +7,8 @@ DockerUI is a web interface to interact with the Remote API.  The goal is to pro
 
 
 ### Goals
-* We are been working towards creating a GOOD UI for docker, with full fledged functionality.
-* Functionality of Search,Pull,Commit,Push are been updated within this code.
+* Little to no dependencies - I really want to keep this project a pure html/js app.  I know this will have to change so that I can introduce authentication and authorization along with managing multiple docker endpoints. 
+* Consistency - The web UI should be consistent with the commands found on the docker CLI.
 
 ### Container Quickstart 
 

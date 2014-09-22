@@ -1,4 +1,4 @@
-
+<div ng-include="template" ng-controller="CommitController"></div>
 <div class="detail">
     
     <h4>Container: {{ container.Name }}</h4>

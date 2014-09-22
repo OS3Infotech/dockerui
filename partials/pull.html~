@@ -1,0 +1,31 @@
+<div id="pull-modal" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Push Image</h3>
+  </div>
+  <div class="modal-body">
+    <form>
+        <fieldset>
+            <legend>Pull Image</legend>
+
+            <label>username:</label>
+            <input type="text" ng-model="config.uname"/>
+            <small>Input commands as an array</small>
+
+            <label>password:</label>
+            <input type="password" ng-model="config.pass"/>
+
+            <label>email:</label>
+            <input type="email" ng-model="config.email"/>
+
+            <label>rep name:</label>
+            <input type="text" ng-model="config.repo"/>
+
+            
+        </fieldset>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a href="" class="btn btn-primary" ng-click="pushImage()">Push</a>
+  </div>
+</div>

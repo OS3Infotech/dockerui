@@ -1,5 +1,5 @@
   <div class="masthead">
-    <img src="/assets/img/docker.png">
+    <img src="/assets/img/docker.png"
     <h3 class="muted">DockerUI</h3>
     <div class="navbar">
       <div class="navbar-inner">
