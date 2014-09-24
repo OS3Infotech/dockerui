@@ -58,11 +58,16 @@ daemon over TCP. You should still secure your DockerUI instance behind some type
 Nginx infront of DockerUI with basic auth.  
   
 ### Screenshots
-![Dashboard](screenshots/Commit.png)
 ![Dashboard](screenshots/Dashboard.png)
+
+![Dashboard](screenshots/Commit.png)
+
 ![Dashboard](screenshots/Pull.png)
+
 ![Dashboard](screenshots/Push.png)
+
 ![Dashboard](screenshots/container.png)
+
 ![Dashboard](screenshots/containers.png)
 
 
