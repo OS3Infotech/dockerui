@@ -8,10 +8,10 @@ docker.This project is not complete and is still under heavy development.
 
 ### New Functionality added
 ```
-### Search repositories from docker hub
-### Pull repositories from docker hub
-### commit container
-### Push files to a docker hub
+ * Search repositories from docker hub
+ * Pull repositories from docker hub
+ * commit container
+ * Push files to a docker hub
 ```
 
 
