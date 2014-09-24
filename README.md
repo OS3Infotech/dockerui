@@ -1,19 +1,16 @@
 ## DockerUI
+
 ```
 DockerUI is a web interface to interact with the Remote API.  The goal is to provide a pure client side implementation so it is effortless to connect and manage docker.  This project is not complete and is still under heavy development.
 ```
 
-##New Functionality added
+### New Functionality added
+* Search repositories from docker hub
+* Pull repositories from docker hub
+* commit container
+* Push files to a docker hub
 
-``` 
- #Search
- 
- #Pull
- 
- #Commit
- 
- #Push
- ```
+
 
 ### Quickstart 
 
@@ -60,6 +57,7 @@ madhavkobal/dockerui:latest -e="http://<docker_host_ip>:4243"
 ```
   
 #### Step 4
+```
 Open your browser to `http://localhost:9999`  
 Or
 Open your browser to `http://<dockerd host ip>:9999`  
@@ -70,7 +68,7 @@ Extract your downloaded zip file dockerui-master.
 Run go server using :
  go run dockerui.go
  Open your browser to `http://localhost:9999` 
-  
+```  
   
 #### Warning
 Bind mounting the unix socket into the DockerUI container is much more secure than exposing your docker 
@@ -101,12 +99,7 @@ Nginx infront of DockerUI with basic auth.
 * Spin.js
 * Ace editor
 
-### Additional Functionalities
-* Search repositories from docker hub
-* Pull repositories from docker hub
-* commit container
-* Push files to a docker hub
- 
+
 
 ### License - MIT
 The DockerUI code is licensed under the MIT license. Flatstrap (bootstrap) is licensed under the Apache License v2.0 and Angular.js is licensed under MIT.
