@@ -36,17 +36,6 @@ daemon over TCP. You should still secure your DockerUI instance behind some type
 Nginx infront of DockerUI with basic auth.  
   
 ### Screenshots
-https://github.com/OS3Infotech/dockerui/blob/master/screenshots/Commit.png
-  https://raw.githubusercontent.com/OS3Infotech/dockerui/master/screenshots/Commit.png
-![Dashboard](http://static.abhinav.ca/dockerui/dockerui-dashboard.png)
-  
-![Containers](http://static.abhinav.ca/dockerui/dockerui-containers.png)
-  
-![Container Details](http://static.abhinav.ca/dockerui/dockerui-container.png)
-  
-![Pretty Graphs](http://static.abhinav.ca/dockerui/dockerui-analytics.png)
-
-![Images](http://static.abhinav.ca/dockerui/dockerui-images.png)
 
 ### Goals
 * Little to no dependencies - I really want to keep this project a pure html/js app.  I know this will have to change so that I can introduce authentication and authorization along with managing multiple docker endpoints. 
