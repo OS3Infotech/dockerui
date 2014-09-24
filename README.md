@@ -2,16 +2,29 @@
 
 DockerUI is a web interface to interact with the Remote API.  The goal is to provide a pure client side implementation so it is effortless to connect and manage docker.  This project is not complete and is still under heavy development.
 
+##New Functionality added
+ Search
+ Pull
+ Commit
+ Push
+ 
+
 ### Quickstart 
 
 #### Step 0
 
-/etc/default# vim docker.io 
-Copy this line to docker.io file
+CORS Request :
+
+To enable cross origin requests to the remote api add the flag "–api-enable-cors" when running docker in daemon mode.
+
+vim /etc/default/docker
+
+Copy paste below line to /etc/default/docker at end
 
 DOCKER_OPTS="-H unix:///var/run/docker.sock -H tcp://0.0.0.0:4243 -api-enable-cors"
 
-/etc/default#service docker.io status
+Restart the Docker Service 
+
 /etc/default#service docker.io start
 
 
@@ -36,13 +49,13 @@ If you're running Docker over tcp:
   
 ```
 docker run -d -p 9999:9999 --name dockerui \
-madhavkobal/dockerui:latest -e="http://<dockerd host ip>:4243"
+madhavkobal/dockerui:latest -e="http://<docker_host_ip>:4243"
 ```
   
 #### Step 3
-Open your browser to `http://<dockerd host ip>:9999`  
-
+Open your browser to `http://localhost:9999`  
 Or
+Open your browser to `http://<dockerd host ip>:9999`  
 
 If you're running Docker using go server: 
 
@@ -95,8 +108,10 @@ The DockerUI code is licensed under the MIT license. Flatstrap (bootstrap) is li
 Copyright (c) 2013 Michael Crosby. http://crosbymichael.com  
   
 Update credits:  
-Abhinav Ajgaonkar http://blog.abhinav.ca  
-Ryan Krieg http://ryankrieg.com  
+madhav@os3infotech.com
+sharvari.limbkar@os3infotech.com
+sayalee.hande@os3infotech.com
+mangesh.phadtare@os3infotech.com
   
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation 
