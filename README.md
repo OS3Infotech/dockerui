@@ -3,17 +3,18 @@
 DockerUI is a web interface to interact with the Remote API.  The goal is to provide a pure client side implementation so it is effortless to connect and manage docker.  This project is not complete and is still under heavy development.
 
 ##New Functionality added
- Search
- Pull
- Commit
- Push
+ 
+ #Search
+ #Pull
+ #Commit
+ #Push
  
 
 ### Quickstart 
 
-#### Step 0
+#### Step 1
 
-CORS Request :
+Configure CORS Request :
 
 To enable cross origin requests to the remote api add the flag "–api-enable-cors" when running docker in daemon mode.
 
@@ -29,7 +30,7 @@ Restart the Docker Service
 
 
 
-#### Step 1
+#### Step 2
   
 Pull the latest image:  
   
@@ -37,7 +38,7 @@ Pull the latest image:
 docker pull madhavkobal/dockerui:latest
 ```
   
-#### Step 2
+#### Step 3
 If you're running Docker using a unix socket (default):  
   
 ```
@@ -52,7 +53,7 @@ docker run -d -p 9999:9999 --name dockerui \
 madhavkobal/dockerui:latest -e="http://<docker_host_ip>:4243"
 ```
   
-#### Step 3
+#### Step 4
 Open your browser to `http://localhost:9999`  
 Or
 Open your browser to `http://<dockerd host ip>:9999`  
