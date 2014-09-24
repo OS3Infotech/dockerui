@@ -59,6 +59,12 @@ Nginx infront of DockerUI with basic auth.
   
 ### Screenshots
 ![Dashboard](screenshots/Commit.png)
+![Dashboard](screenshots/Dashboard.png)
+![Dashboard](screenshots/Pull.png)
+![Dashboard](screenshots/Push.png)
+![Dashboard](screenshots/container.png)
+![Dashboard](screenshots/containers.png)
+
 
 ### Goals
 * Little to no dependencies - I really want to keep this project a pure html/js app.  I know this will have to change so that I can introduce authentication and authorization along with managing multiple docker endpoints. 
