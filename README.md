@@ -37,7 +37,7 @@ Nginx infront of DockerUI with basic auth.
   
 ### Screenshots
   
-![Dashboard](http://static.abhinav.ca/dockerui/dockerui-dashboard.png)
+/OS3Infotech/dockerui/blob/master/screenshots/Commit.png
   
 ![Containers](http://static.abhinav.ca/dockerui/dockerui-containers.png)
   
