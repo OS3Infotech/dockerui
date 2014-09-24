@@ -1,14 +1,19 @@
 ## DockerUI
-
+```
 DockerUI is a web interface to interact with the Remote API.  The goal is to provide a pure client side implementation so it is effortless to connect and manage docker.  This project is not complete and is still under heavy development.
+```
 
 ##New Functionality added
- 
+
+``` 
  #Search
- #Pull
- #Commit
- #Push
  
+ #Pull
+ 
+ #Commit
+ 
+ #Push
+ ```
 
 ### Quickstart 
 
@@ -18,6 +23,7 @@ Configure CORS Request :
 
 To enable cross origin requests to the remote api add the flag "–api-enable-cors" when running docker in daemon mode.
 
+```
 vim /etc/default/docker
 
 Copy paste below line to /etc/default/docker at end
@@ -27,7 +33,7 @@ DOCKER_OPTS="-H unix:///var/run/docker.sock -H tcp://0.0.0.0:4243 -api-enable-co
 Restart the Docker Service 
 
 /etc/default#service docker.io start
-
+```
 
 
 #### Step 2
