@@ -1,15 +1,18 @@
 ## DockerUI
 
 ```
-DockerUI is a web interface to interact with the Remote API.  The goal is to provide a pure client side implementation so it is effortless to connect and manage docker.  This project is not complete and is still under heavy development.
+DockerUI is a web interface to interact with the Remote API.  
+The goal is to provide a pure client side implementation so it is effortless to connect and manage docker.  
+This project is not complete and is still under heavy development.
 ```
 
 ### New Functionality added
+```
 * Search repositories from docker hub
 * Pull repositories from docker hub
 * commit container
 * Push files to a docker hub
-
+```
 
 
 ### Quickstart 
