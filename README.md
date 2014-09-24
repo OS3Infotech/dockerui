@@ -17,7 +17,7 @@ If you're running Docker using a unix socket (default):
   
 ```
 docker run -d -p 9000:9000 -v /var/run/docker.sock:/docker.sock \
---name dockerui abh1nav/dockerui:latest -e="/docker.sock"
+--name dockerui madhavkobal/dockerui:latest -e="/docker.sock"
 ```
   
 If you're running Docker over tcp:  
@@ -43,7 +43,7 @@ Nginx infront of DockerUI with basic auth.
 
 ### Stack
 * Angular.js
-* Flatstrap
+* Flatstrap ( Flat Twitter Bootstrap )
 * Spin.js
 * Ace editor
 
